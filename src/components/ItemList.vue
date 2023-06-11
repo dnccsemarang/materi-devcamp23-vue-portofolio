@@ -6,7 +6,7 @@ const props = defineProps({
 
 <template>
   <ul class="d-flex flex-wrap gap-2">
-    <li v-for="data in props.data">{{ data }}</li>
+    <li v-for="(data, index) in props.data" :key="index">{{ data }}</li>
   </ul>
 </template>
 
